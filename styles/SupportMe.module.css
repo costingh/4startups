@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 71px - 71px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.inner {
+  width: 100%;
+  max-width: 400px;
+}
+
+.option,
+.firstOption {
+  padding: 0px 20px;
+  width: 100%;
+  border-radius: 40px;
+  border: 1px solid #e7e7e7;
+  color: #111;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.firstOption {
+  border: 1px solid #066aff;
+  background: #066aff;
+  color: #fff;
+}
+
+.option:hover {
+  border: 1px solid #111;
+}
+
+.option img,
+.firstOption img {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.container h1 {
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+}
+
+.description {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 17px;
+  color: rgb(128, 128, 128);
+  margin-bottom: 50px;
+}
+
+.muted {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+  margin-bottom: 50px;
+}
+
+.badge {
+  position: absolute;
+  right: 0;
+  top: -15px;
+  padding: 0px 15px;
+  height: 30px;
+  line-height: 30px;
+  background: #111;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 14px;
+}

@@ -1,0 +1,60 @@
+.navButtonsCategories {
+  height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.innerButtonsContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btnOutlined {
+  padding: 13px 60px;
+  border-radius: 20px;
+  color: #111;
+  border: 1px solid #5f698681;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.btnOutlined:hover {
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+}
+
+.social svg {
+  margin: 0px 15px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.social svg:hover {
+  fill: #066aff;
+}
+
+@media only screen and (max-width: 475px) {
+  .btnOutlined {
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .social svg {
+    margin: 0px 5px;
+  }
+}
