@@ -17,7 +17,7 @@ function SupportMe() {
           </p>
           <Link href="https://www.buymeacoffee.com/4startups">
             <div className={styles.firstOption}>
-              <div className={styles.badge}>Most Popular</div>
+              <div className={styles.badge}>Recommended</div>
               <img
                 src="https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-3.svg"
                 alt=""

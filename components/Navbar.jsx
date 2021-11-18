@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import { marketingSections } from "../constants/marketingSections";
+import { onlinePresenceSections } from "../constants/onlinePresenceSections";
 import { categoriesList } from "../constants/categories";
 
 function Navbar() {
@@ -46,11 +47,18 @@ function Navbar() {
                         <p>{category.name}</p>
                       </Link>
                       <div className={styles.sections}>
-                        {marketingSections.map((item) => (
-                          <Link href={item.link} className={styles.itemLink}>
-                            {item.name}
-                          </Link>
-                        ))}
+                        {category.name === "Marketing" &&
+                          marketingSections.map((item) => (
+                            <Link href={item.link} className={styles.itemLink}>
+                              {item.name}
+                            </Link>
+                          ))}
+                        {category.name === "Online Presence" &&
+                          onlinePresenceSections.map((item) => (
+                            <Link href={item.link} className={styles.itemLink}>
+                              {item.name}
+                            </Link>
+                          ))}
                       </div>
                     </div>
                   ))}
