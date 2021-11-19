@@ -7,6 +7,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { marketingSections } from "../constants/marketingSections";
 import { onlinePresenceSections } from "../constants/onlinePresenceSections";
+import { financesSections } from "../constants/financesSections";
+import { humanResourcesSections } from "../constants/humanResourcesSections";
+import { workflowSections } from "../constants/workflowSections";
+import { communicationSections } from "../constants/communicationSections";
 
 function MarketingLayout({ toolsList, content }) {
   const router = useRouter();
@@ -22,6 +26,14 @@ function MarketingLayout({ toolsList, content }) {
       setCurrentSections(marketingSections);
     else if (router.route.startsWith("/categories/online-presence"))
       setCurrentSections(onlinePresenceSections);
+    else if (router.route.startsWith("/categories/finances"))
+      setCurrentSections(financesSections);
+    else if (router.route.startsWith("/categories/human-resources"))
+      setCurrentSections(humanResourcesSections);
+    else if (router.route.startsWith("/categories/workflow"))
+      setCurrentSections(workflowSections);
+    else if (router.route.startsWith("/categories/communication"))
+      setCurrentSections(communicationSections);
   }, []);
 
   return (

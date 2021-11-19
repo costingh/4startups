@@ -4,7 +4,7 @@ import { NextSeo } from "next-seo";
 function SEO() {
   return (
     <NextSeo
-      title=""
+      title="4 Startups"
       description=""
       canonical=""
       openGraph={{
@@ -21,7 +21,7 @@ function SEO() {
             type: "image/png",
           },
           {
-            url: "https://nft-finder.vercel.app/favicon.png",
+            url: "/favicon.png",
             width: 32,
             height: 32,
             alt: "NFT Finder Favicon",

@@ -3,6 +3,11 @@ import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import { marketingSections } from "../constants/marketingSections";
 import { onlinePresenceSections } from "../constants/onlinePresenceSections";
+import { communicationSections } from "../constants/communicationSections";
+import { financesSections } from "../constants/financesSections";
+import { humanResourcesSections } from "../constants/humanResourcesSections";
+import { workflowSections } from "../constants/workflowSections";
+
 import { categoriesList } from "../constants/categories";
 
 function Navbar() {
@@ -55,6 +60,30 @@ function Navbar() {
                           ))}
                         {category.name === "Online Presence" &&
                           onlinePresenceSections.map((item) => (
+                            <Link href={item.link} className={styles.itemLink}>
+                              {item.name}
+                            </Link>
+                          ))}
+                        {category.name === "Communication" &&
+                          communicationSections.map((item) => (
+                            <Link href={item.link} className={styles.itemLink}>
+                              {item.name}
+                            </Link>
+                          ))}
+                        {category.name === "Finances" &&
+                          financesSections.map((item) => (
+                            <Link href={item.link} className={styles.itemLink}>
+                              {item.name}
+                            </Link>
+                          ))}
+                        {category.name === "Human Resources" &&
+                          humanResourcesSections.map((item) => (
+                            <Link href={item.link} className={styles.itemLink}>
+                              {item.name}
+                            </Link>
+                          ))}
+                        {category.name === "Workflow" &&
+                          workflowSections.map((item) => (
                             <Link href={item.link} className={styles.itemLink}>
                               {item.name}
                             </Link>
