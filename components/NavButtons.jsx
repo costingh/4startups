@@ -1,6 +1,5 @@
 import styles from "../styles/NavButtons.module.css";
 import { useRouter } from "next/router";
-import Link from "next/link";
 
 function NavButtons() {
   const router = useRouter();

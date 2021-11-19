@@ -1,44 +1,32 @@
 import React from "react";
 import { NextSeo } from "next-seo";
 
-function SEO() {
+function SEO({ title }) {
   return (
     <NextSeo
-      title="4 Startups"
-      description=""
-      canonical=""
+      title={title ? title : "Startups"}
+      description="4Startups is a program developed to help entrepreneurs find the right ICT solutions to grow their businesses. We are offering a complex list of digital tools (marketing, content management, social media management, analytics, finances, human resources, workflow, communication and many more) four startups, for business owners and entrepeneurs."
+      canonical="https://4startups.vercel.app/"
       openGraph={{
-        url: "",
-        title: "",
-        description: "",
-        keywords: "",
+        url: "https://4startups.vercel.app/",
+        title: "Tools for Startups",
+        description:
+          "4Startups is a program developed to help entrepreneurs find the right ICT solutions to grow their businesses. We are offering a complex list of digital tools (marketing, content management, social media management, analytics, finances, human resources, workflow, communication and many more) four startups, for business owners and entrepeneurs.",
+        keywords:
+          "digital tools, sfotware for startups, startups, marketing, human resources, ICT solutions, communication, seo, web presence, finances, workflow, social media management, analytics",
         images: [
-          {
-            url: "",
-            width: 1280,
-            height: 1280,
-            alt: "",
-            type: "image/png",
-          },
           {
             url: "/favicon.png",
             width: 32,
             height: 32,
-            alt: "NFT Finder Favicon",
+            alt: "favicon",
             type: "image/png",
           },
-          {
-            url: "https://nft-finder.vercel.app/vercel.svg",
-            width: 32,
-            height: 32,
-            alt: "Vercel Logo",
-            type: "image/svg",
-          },
         ],
-        site_name: "NFT Finder",
+        site_name: "4 Startups",
       }}
       twitter={{
-        site: "@costin_official",
+        site: "@4startups_app",
         cardType: "summary_large_image",
       }}
       additionalMetaTags={[
@@ -50,7 +38,8 @@ function SEO() {
         {
           property: "application-name",
           httpEquiv: "application-name",
-          content: "NFT Finder",
+          content:
+            "4Startups is a program developed to help entrepreneurs find the right ICT solutions to grow their businesses. We are offering a complex list of digital tools (marketing, content management, social media management, analytics, finances, human resources, workflow, communication and many more) four startups, for business owners and entrepeneurs.",
         },
       ]}
     />

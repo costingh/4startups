@@ -36,10 +36,10 @@
   grid-column-gap: 30px;
   justify-content: space-evenly;
   overflow-y: auto;
-  /* grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-row-gap: 60px;
-  justify-items: center; */
+}
+
+.flexRight2 {
+  background: #066aff18;
 }
 
 .flexLeft > div,

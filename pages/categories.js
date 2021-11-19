@@ -4,10 +4,12 @@ import Navbar from "../components/Navbar";
 import styles from "../styles/Categories.module.css";
 import NavButtons from "../components/NavButtons";
 import { categoriesList } from "../constants/categories";
+import SEO from "../components/SEO";
 
 function categories() {
   return (
     <>
+      <SEO title={"Categories"} />
       <Navbar />
 
       <main className={styles.main}>

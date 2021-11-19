@@ -11,10 +11,12 @@ import { financesSections } from "../constants/financesSections";
 import { humanResourcesSections } from "../constants/humanResourcesSections";
 import { workflowSections } from "../constants/workflowSections";
 import { communicationSections } from "../constants/communicationSections";
+import SEO from "./SEO";
 
 function MarketingLayout({ toolsList, content }) {
   const router = useRouter();
   const [currentSections, setCurrentSections] = useState([]);
+  const [currentTitle, setCurrentTitle] = useState("Startups");
 
   const isActive = (item) => {
     if (router.route === item.link) return true;
@@ -22,22 +24,30 @@ function MarketingLayout({ toolsList, content }) {
   };
 
   useEffect(() => {
-    if (router.route.startsWith("/categories/marketing"))
+    if (router.route.startsWith("/categories/marketing")) {
       setCurrentSections(marketingSections);
-    else if (router.route.startsWith("/categories/online-presence"))
+      setCurrentTitle("Marketing");
+    } else if (router.route.startsWith("/categories/online-presence")) {
       setCurrentSections(onlinePresenceSections);
-    else if (router.route.startsWith("/categories/finances"))
+      setCurrentTitle("Web Presence");
+    } else if (router.route.startsWith("/categories/finances")) {
       setCurrentSections(financesSections);
-    else if (router.route.startsWith("/categories/human-resources"))
+      setCurrentTitle("Finances");
+    } else if (router.route.startsWith("/categories/human-resources")) {
       setCurrentSections(humanResourcesSections);
-    else if (router.route.startsWith("/categories/workflow"))
+      setCurrentTitle("Human Resources");
+    } else if (router.route.startsWith("/categories/workflow")) {
       setCurrentSections(workflowSections);
-    else if (router.route.startsWith("/categories/communication"))
+      setCurrentTitle("Workflow");
+    } else if (router.route.startsWith("/categories/communication")) {
       setCurrentSections(communicationSections);
+      setCurrentTitle("Communication");
+    }
   }, []);
 
   return (
     <>
+      <SEO title={currentTitle} />
       <Navbar />
       <div className={styles.displayFlex}>
         <div className={toolsList ? styles.flexLeft2 : styles.flexLeft}>

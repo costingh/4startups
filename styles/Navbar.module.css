@@ -229,21 +229,20 @@
 
 .sections {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
 }
 
 .sections a {
   font-family: "Graphik Regular", sans-serif;
   color: rgba(17, 17, 17, 0.6);
-  font-size: 13px;
+  font-size: 14px;
   margin: 2px 0px;
   font-weight: 400;
   text-decoration: none;
   letter-spacing: 0.2px;
   display: inline-block;
   transition: all 0.1s ease;
-  width: 50%;
+  width: 100%;
 }
 
 .sections a:hover {

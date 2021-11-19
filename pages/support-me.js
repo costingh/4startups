@@ -3,10 +3,12 @@ import Navbar from "../components/Navbar";
 import NavButtons from "../components/NavButtons";
 import styles from "../styles/SupportMe.module.css";
 import Link from "next/link";
+import SEO from "../components/SEO";
 
 function SupportMe() {
   return (
     <div>
+      <SEO title="Support Me" />
       <Navbar />
       <div className={styles.container}>
         <div className={styles.inner}>

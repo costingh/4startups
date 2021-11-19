@@ -6,9 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <link rel="icon" href="/favicon.png" />
       <SEO />
-
       <Navbar />
 
       <main className={styles.main}>
