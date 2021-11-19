@@ -4,13 +4,14 @@ import NavButtons from "../components/NavButtons";
 import styles from "../styles/SupportMe.module.css";
 import Link from "next/link";
 import SEO from "../components/SEO";
+import Testimonials from "../components/Testimonials";
 
 function SupportMe() {
   return (
     <div>
       <SEO title="About" />
       <Navbar />
-      <div className={styles.container}>
+      <div className={styles.container} style={{ height: "auto" }}>
         <div className={styles.inner}>
           <h1>What is our goal?</h1>
           <p
@@ -25,6 +26,8 @@ function SupportMe() {
             hand-picked some of the most popular with good reviews & reputation
             solutions for solving all of your problems.
           </p>
+          <h2>Testimonials</h2>
+          <Testimonials />
           <Link href="/categories">
             <div className={styles.firstOption}>
               <img src="/favicon.png" alt=""></img>
