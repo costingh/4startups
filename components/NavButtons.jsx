@@ -41,7 +41,7 @@ function NavButtons() {
           </a>
           <a
             target="_blank"
-            href="https://www.instagram.com/costingheorghe5/"
+            href="https://www.instagram.com/4startups.official/"
             rel="noopener noreferrer"
           >
             <svg
